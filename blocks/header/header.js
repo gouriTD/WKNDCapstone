@@ -135,14 +135,23 @@ export default async function decorate(block) {
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-      navSection.addEventListener('click', () => {
-        if (isDesktop.matches) {
-          const expanded = navSection.getAttribute('aria-expanded') === 'true';
-          toggleAllNavSections(navSections);
-          navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-        }
-      });
+      // if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
+      // navSection.addEventListener('click', () => {
+      //   if (isDesktop.matches) {
+      //     const expanded = navSection.getAttribute('aria-expanded') === 'true';
+      //     toggleAllNavSections(navSections);
+      //     navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      //   }
+      // });
+      const navEl = navSection.querySelector('h2'); 
+      if(navEl){
+        // replace the h2 with p tag.
+        const navlinkEl = document.createElement('a');
+        navlinkEl.textContent = navEl.textContent;
+        navEl.replaceWith(navlinkEl);
+
+        // Now add click event on it.
+      }
     });
   }
 

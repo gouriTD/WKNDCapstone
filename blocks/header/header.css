@@ -30,13 +30,20 @@ header nav[aria-expanded='true'] {
   min-height: 100dvh;
 }
 
+header .nav-brand p{
+  font-family: var(--fontFamilySansSerif);
+  font-size: var(--heading-font-size-l);
+  line-height: 2.7rem;
+}
+
 @media (width >= 900px) {
   header nav {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1264px;
-    padding: 0 32px;
+    padding: 80px 32px;
+    margin-inline: 36px;
   }
 
   header nav[aria-expanded='true'] {
@@ -155,6 +162,20 @@ header nav .nav-sections {
   flex: 1 1 auto;
   display: none;
   visibility: hidden;
+  font-family: var(--fontFamilySansSerif);
+}
+
+header nav .nav-sections ul > li > a {
+  font-size: var(--nav-item-font-size-s);
+  color: var(--dark-color);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+header nav .nav-sections ul > li > a:hover,
+header nav .nav-sections ul > li > a:active {
+  background-color: yellow;
 }
 
 header nav[aria-expanded='true'] .nav-sections {
@@ -190,6 +211,9 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav[aria-expanded='true'] .nav-sections {
     align-self: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   header nav .nav-sections .nav-drop {
@@ -220,7 +244,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
     margin: 0;
   }
 
