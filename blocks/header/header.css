@@ -42,7 +42,7 @@ header .nav-brand p{
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1264px;
-    padding: 80px 32px;
+    padding: 0 32px;
     margin-inline: 36px;
   }
 

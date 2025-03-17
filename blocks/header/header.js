@@ -4,6 +4,21 @@ import { loadFragment } from '../fragment/fragment.js';
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
+function stickyHeader() {
+  const header = document.querySelector("header");
+
+  const stickyPoint = header.offsetTop; // The initial position of the header from the top of the document
+
+
+    if (window.pageYOffset > stickyPoint) {
+        header.classList.add("sticky"); // Add sticky class when scrolled past the header
+        
+      } else {
+        header.classList.remove("sticky"); // Remove sticky class when scrolling back up
+      }
+  
+}
+
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
     const nav = document.getElementById('nav');
@@ -176,4 +191,7 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  // Adding a sticky header if the scroll is beyond a certain limit.  
+  window.onscroll = function() { stickyHeader() };
 }
