@@ -145,12 +145,16 @@ export default async function decorate(block) {
       // });
       const navEl = navSection.querySelector('h2'); 
       if(navEl){
-        // replace the h2 with p tag.
+        // replace the h2 with a tag.
         const navlinkEl = document.createElement('a');
         navlinkEl.textContent = navEl.textContent;
-        navEl.replaceWith(navlinkEl);
 
-        // Now add click event on it.
+        // Now add click event on each nav link item.
+        navlinkEl.addEventListener('click',()=>{
+          console.log(`${navlinkEl.textContent} clicked`)
+        })
+
+        navEl.replaceWith(navlinkEl);
       }
     });
   }
