@@ -91,20 +91,7 @@ body.appear {
 
 header {
   height: var(--nav-height);
-  transition: transform 0.5s ease, height 0.3s ease;
 }
-
-header.sticky {
-  transform: translateY(-50%);
-  height: var(--nav-sticky-height);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /*Keeps it on top*/
-  box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.2);
-} 
-
 
 header .header,
 footer .footer {
@@ -272,4 +259,8 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main > .section > .carousel-wrapper {
+  padding: 0;
 }
