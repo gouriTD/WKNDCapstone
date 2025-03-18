@@ -1,0 +1,104 @@
+.signin-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 3;
+    font-size: var(--nav-item-font-size-s);
+    text-align: center;
+    cursor: pointer;
+}
+
+.signin-banner p{
+    margin: 0;
+}
+
+.signin-banner .signin-banner-container {
+    margin-right: 150px;
+    margin-block: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.country-list {
+    display: block;
+    position: fixed;
+    min-width: 360px;
+    top: 36px;
+    right: 50px;
+    z-index: 4;
+    background-color: black;
+}
+
+.country-list.hidden {
+    display: none;
+}
+
+.country-list > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.country-list > ul > li {
+    background-position-x: 9pt;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 25px; 
+    
+    border-bottom: .25px solid;
+    padding: 10px 0 10px 60px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.country-list > ul > li > p,
+.country-list > ul > li > span {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.country-selector-component:after {
+    border-style: solid;
+    border-width: .15em .15em 0 0;
+    content: "";
+    display: inline-block;
+    height: .45em;
+    left: .45em;
+    position: relative;
+    top: -0.15em;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    vertical-align: top;
+    width: .45em;
+    transition: transform 0.3s ease;
+}
+
+.country-selector-component.open::after {
+    top: 0.15em;
+    transform: rotate(-45deg);
+}
+
+
+.country-selector-component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.country-selector-component span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.country-selector-component img {
+    width: 24px;
+    height: 20px;
+}
+

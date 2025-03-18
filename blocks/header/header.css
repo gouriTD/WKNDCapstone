@@ -3,7 +3,7 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   height: var(--nav-height);
-  top:0;
+  top: 18px;
   left:0;
   z-index: 2;
   position: fixed;
