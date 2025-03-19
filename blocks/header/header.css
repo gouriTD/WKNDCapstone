@@ -2,16 +2,14 @@
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
-  height: var(--nav-height);
+  height: var(--nav-sticky-height-mobile);
   top: 18px;
   left:0;
   z-index: 2;
   position: fixed;
-  transition: height 0.5s ease;
 }
 
 header.sticky .nav-wrapper {
-  height: var(--nav-sticky-height);
   box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -58,6 +56,15 @@ header .nav-brand p{
   header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
+  }
+
+  header .nav-wrapper {
+    height: var(--nav-height);
+    transition: height 0.5s ease;
+  }  
+
+  header.sticky .nav-wrapper {
+    height: var(--nav-sticky-height-desktop);
   }
 }
 

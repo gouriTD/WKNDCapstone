@@ -125,7 +125,9 @@ export default async function decorate(block) {
       <button type="button" class="slide-next" aria-label="${placeholders.nextSlide || 'Next Slide'}"></button>
     `;
 
-    container.append(slideNavButtons);
+    // container.append(slideNavButtons); -- classic implementation ---
+    // Instead of adding the nav button to main container we add it as sibling of nav indicator.
+    slideIndicators.parentNode?.insertBefore(slideNavButtons, slideIndicators.nextElementSibling);
   }
 
   rows.forEach((row, idx) => {

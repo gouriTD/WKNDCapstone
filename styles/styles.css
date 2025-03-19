@@ -43,7 +43,8 @@
 
   /* nav height */
   --nav-height: 128px;
-  --nav-sticky-height: 80px;
+  --nav-sticky-height-mobile: 100px;
+  --nav-sticky-height-desktop: 80px;
 }
 
 /* fallback fonts */
@@ -91,7 +92,7 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  height: var(--nav-sticky-height);
 }
 
 header .header,

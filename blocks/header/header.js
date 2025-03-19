@@ -192,6 +192,6 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 
-  // Adding a sticky header if the scroll is beyond a certain limit.  
+  // Adding a sticky header if the scroll is beyond a certain limit. 
   window.onscroll = function() { stickyHeader() };
 }
