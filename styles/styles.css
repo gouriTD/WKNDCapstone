@@ -256,12 +256,6 @@ main > .section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
-}
-
 /* section metadata */
 main .section.light,
 main .section.highlight {
@@ -272,4 +266,36 @@ main .section.highlight {
 
 main > .section > .carousel-wrapper {
   padding: 0;
+}
+
+main > .section.underline h2{
+  padding-bottom: 12px;
+  width: 50%;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+main > .section.underline h2::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 45%; /* The border will cover 50% of the width */
+  height: 2px;
+  background-color: var(--wknd-highlight-color);
+}
+
+main > .section.separator .button-container:nth-last-child(1)  {
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+@media (width >= 900px) {
+  main > .section > div {
+    padding: 0 64px;
+  }
+
+  main > .section.underline h2::before{
+    width: 25%;
+  }
 }
