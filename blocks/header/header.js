@@ -163,6 +163,7 @@ export default async function decorate(block) {
         // replace the h2 with a tag.
         const navlinkEl = document.createElement('a');
         navlinkEl.textContent = navEl.textContent;
+        navlinkEl.setAttribute('href',`${navEl.firstChild.href}`)
 
         // Now add click event on each nav link item.
         navlinkEl.addEventListener('click',()=>{
