@@ -191,13 +191,15 @@ header nav .nav-sections ul > li > a {
 
 header nav .nav-sections ul > li > a:hover,
 header nav .nav-sections ul > li > a:active {
-  background-color: yellow;
+  color: yellow;
 }
 
 header nav[aria-expanded='true'] .nav-sections {
   display: block;
   visibility: visible;
   align-self: start;
+  background-color: var(--background-color);
+  color: var(--dark-color);
 }
 
 header nav .nav-sections ul {
@@ -300,6 +302,13 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
   }
+
+  header nav .nav-sections ul > li > a:hover,
+  header nav .nav-sections ul > li > a:active {
+    background-color: yellow;
+    color: var(--dark-color);
+  }
+
 }
 
 /* tools */
