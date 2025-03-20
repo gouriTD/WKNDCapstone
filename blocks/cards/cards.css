@@ -3,17 +3,16 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
   grid-gap: 24px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  /* margin: 16px; */
 }
 
 .cards .cards-card-image {
@@ -24,4 +23,18 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards h3 {
+  font-family: var(--fontFamilySansSerif);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cards p {
+  font-size: var(--card-text-item);
+  color: var(--dark-color);
+  text-transform: uppercase;
+  margin-top: 16px;
 }

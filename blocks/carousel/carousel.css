@@ -57,7 +57,7 @@
     color: var(--text-color);
     background-color: rgb(255 255 255);
     /* width: var(--slide-content-width, auto); */
-    top: 35%;
+    top: 30%;
   }
   
   .carousel .carousel-slide-indicators {
@@ -137,10 +137,14 @@
     left: calc(50% - 2px);
   }
 
-  .carousel h2 {
+  main > .section.underline .carousel h2 {
     font-weight: 400;
     font-family: sans;
     margin: 0;
+  }
+
+  .carousel h2::before{
+    display: none;
   }
 
   .carousel p {
