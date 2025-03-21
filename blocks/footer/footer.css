@@ -49,7 +49,7 @@ footer .default-content-wrapper:first-child {
   display: inline-flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 24px;
+  gap: 96px;
   width: 100%;
 }
 
