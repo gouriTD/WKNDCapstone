@@ -295,14 +295,11 @@ main > .section.underline h2::before{
   background-color: var(--wknd-highlight-color);
 }
 
-main > .section.separator .default-content-wrapper:last-child > .button-container {
+main > .section.separator .default-content-wrapper:last-child > .button-container, 
+main > .section.separator .default-content-wrapper:last-child > p {
   padding-bottom: 36px;
   border-bottom: 1px solid var(--light-grey);
 }
-
-/* main > .section > .default-content-wrapper:first-child {
-  margin-top: 175px;
-} */
 
 @media (width >= 900px) {
   main > .section > div {

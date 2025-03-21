@@ -1,0 +1,47 @@
+.articles-content-container > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-gap: 24px;
+}
+
+.articles-content-container > ul > li {
+    background-color: var(--background-color);
+    cursor: pointer;
+  }
+  
+  .articles-content-container .articles-content-container-card-image {
+    line-height: 0;
+  }
+  
+  .articles-content-container > ul > li > a:any-link {
+    text-decoration: none;
+    color: var(--dark-color);
+  }
+  .articles-content-container > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  
+  .articles-content-container h3 {
+    font-family: var(--fontFamilySansSerif);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .articles-content-container p {
+    display: inline-block;
+    font-size: var(--card-text-item);
+    color: var(--dark-color);
+    text-transform: uppercase;
+    margin-top: 16px;
+    width: 36ch; /* ch is the unit for character width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: noWrap;
+    cursor: default;
+  }
