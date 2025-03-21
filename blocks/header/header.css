@@ -1,15 +1,16 @@
 /* header and nav layout */
 header .nav-wrapper {
+  position: fixed;
   background-color: var(--background-color);
   width: 100%;
   height: var(--nav-sticky-height-mobile);
   top: 18px;
   left:0;
   z-index: 2;
-  position: fixed;
 }
 
 header.sticky .nav-wrapper {
+  
   box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
