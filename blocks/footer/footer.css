@@ -1,6 +1,8 @@
 footer {
-  background-color: var(--light-color);
+  background-color: var(--footer-background-color);
   font-size: var(--body-font-size-xs);
+  color:  var(--footer-text-color);
+  opacity: 1;
 }
 
 footer .footer > div {
@@ -11,10 +13,90 @@ footer .footer > div {
 
 footer .footer p {
   margin: 0;
+  font-size: 12px;
+}
+
+footer .section .default-content-wrapper img {
+  width: 128px;
+  height: 48px;
+  object-fit: cover;
+}
+
+footer .section .default-content-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .section .default-content-wrapper ul > li{
+  font-size: 14px;
+  color: var(--footer-text-color);
+  margin-bottom: 16px;
+}
+
+footer .default-content-wrapper li > a{
+  text-decoration: none;
+}
+
+footer .default-content-wrapper li > a:hover {
+  text-decoration: underline
+}
+
+footer .default-content-wrapper:first-child {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+footer a:any-link {
+  color: var(--footer-text-color);
+  text-decoration: underline;
+}
+
+footer .default-content-wrapper p {
+  margin-bottom: 14px;
 }
 
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+
+  footer .section .default-content-wrapper ul {
+    flex: none;
+    flex-direction: row;
+    gap: 24px;
+    
+  }
+
+  footer .section .default-content-wrapper:first-child {
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    gap: 64px;
+  }
+
+  footer .social > div{
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  footer .social-wrapper, footer .social {
+    display: inline;
+  }
+
+  footer .social-container {
+    position: relative;
+  }
+
+  footer .social-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

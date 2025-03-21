@@ -1,0 +1,25 @@
+.social > div{
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.social .social-title p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.social .social-logo span {
+    padding: 12px;
+    background-color: var(--footer-text-color);
+}
+
+.social {
+    margin-block: 24px;
+}
+
+@media (width >= 900) {
+}

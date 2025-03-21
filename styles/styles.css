@@ -22,6 +22,10 @@
   --wknd-highlight-color: #ffea00;
   --light-grey: lightgrey;
 
+  /* footer-colors */
+  --footer-background-color: #202020;
+  --footer-text-color: #ebebeb;
+
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
