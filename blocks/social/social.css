@@ -17,6 +17,9 @@
     background-color: var(--footer-text-color);
 }
 
+.social.white .social-logo span {
+    background-color: var(--dark-background-color);
+}
 .social {
     margin-block: 24px;
 }
