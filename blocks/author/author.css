@@ -28,8 +28,9 @@
 }
 
 .author .author-avatar img{
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
+    aspect-ratio: 1/1;
 }
 
 .author.social-white .author-social-links span {
