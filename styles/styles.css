@@ -301,6 +301,16 @@ main > .section.separator .default-content-wrapper:last-child > p {
   border-bottom: 1px solid var(--light-grey);
 }
 
+main > .section.separator:has(.author) {
+  margin-inline: 48px;
+  border-top: 1px solid var(--light-grey);
+}
+
+main > .section > .author-wrapper {
+  padding: 0;
+}
+
+
 @media (width >= 900px) {
   main > .section > div {
     padding: 0 64px;
@@ -317,5 +327,15 @@ main > .section.separator .default-content-wrapper:last-child > p {
 
   main > .section:first-of-type {
     margin-top: 196px;
+  }
+
+  main > .section.article .default-content-wrapper h2{
+    font-size: var(--heading-font-size-xl);
+    margin-block: 24px;
+  }
+
+  main > .section.article .default-content-wrapper h4{
+    font-size: 16px;
+    text-transform: uppercase;
   }
 }

@@ -1,0 +1,65 @@
+.author > ul {
+    list-style: none;
+}
+
+/* If horizontal then the child elements would be arranged in row*/
+.author > ul >li {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.author .author-content{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.author .author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author .author-avatar img{
+    object-fit: contain;
+    object-position: center;
+}
+
+.author.social-white .author-social-links span {
+    padding: 12px;
+    background-color: black;
+}
+
+.author .author-info h4{
+    font-size: 24px;
+}
+
+.author .author-info p{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.author ul {
+    padding-left: 0;
+}
+
+@media (width >= 900px ) {
+    .author > ul >li {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .author .author-avatar {
+        width: 80px;
+        height: 80px;
+    }    
+}
