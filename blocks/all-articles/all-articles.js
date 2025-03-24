@@ -1,5 +1,5 @@
 
-async function fetchAllArticles(){
+export async function fetchAllArticles(){
     try {
         const res = await fetch('/query-index.json');
         if(res.ok){

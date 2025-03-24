@@ -302,12 +302,18 @@ main > .section.separator .default-content-wrapper:last-child > p {
 }
 
 main > .section.separator:has(.author) {
-  margin-inline: 48px;
-  border-top: 1px solid var(--light-grey);
+  /* margin-inline: 48px; */
+  
 }
 
-main > .section > .author-wrapper {
-  padding: 0;
+main .section > .author-wrapper {
+  padding: 48px 0 0 0;
+  border-top: 1px solid var(--light-grey);
+  margin-block: 48px;
+}
+
+.article .default-content-wrapper p{
+  font-size: 16px;
 }
 
 
