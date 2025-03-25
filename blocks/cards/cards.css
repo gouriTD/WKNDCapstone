@@ -38,3 +38,8 @@
   text-transform: uppercase;
   margin-top: 16px;
 }
+
+.cards li > a:any-link {
+  text-decoration: none;
+  color: var(--dark-color);
+}

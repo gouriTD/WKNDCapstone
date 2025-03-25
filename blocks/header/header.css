@@ -27,6 +27,7 @@ header nav {
   height: 100%;
   padding: 0 24px;
   font-family: var(--body-font-family);
+  margin-inline-end: 24px;
 }
 
 header nav[aria-expanded='true'] {
