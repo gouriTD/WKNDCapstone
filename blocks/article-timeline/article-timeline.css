@@ -23,6 +23,11 @@
     border-left: 5px solid var(--light-grey);
 }
 
+.section.article.article-timeline-container .timeline-card:hover{
+    background-color: var(--wknd-highlight-color);
+    border-left: 5px solid var(--dark-color);
+}  
+
 .section.article.article-timeline-container .timeline-card > a:any-link{
     text-decoration: none;
     color: var(--dark-color);
