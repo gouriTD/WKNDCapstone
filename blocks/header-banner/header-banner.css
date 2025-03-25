@@ -17,7 +17,7 @@
 
 .signin-banner .signin-banner-container {
     margin-inline-start: 24px;
-    margin-inline-end: 50px;
+    margin-inline-end: 24px;
     margin-block: 2px;
     display: flex;
     justify-content: space-between;
