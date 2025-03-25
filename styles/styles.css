@@ -306,7 +306,7 @@ main > .section.separator:has(.author) {
   
 }
 
-main .section > .author-wrapper {
+main .section > .author-wrapper:has(.separator) {
   padding: 48px 0 0 0;
   border-top: 1px solid var(--light-grey);
   margin-block: 48px;
