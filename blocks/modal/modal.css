@@ -3,19 +3,24 @@ body.modal-open {
   }
   
   .modal dialog::backdrop {
-    background-color: rgb(19 19 19 / 75%);
+    /* background-color: rgb(19 19 19 / 75%); */
   }
   
   .modal dialog {
     /* overscroll-behavior: none; */
     overflow-y: auto;
     position: relative;
-    width: calc(100vw - 48px);
+    /* width: calc(100vw - 48px); */
+    width: 400px;
     max-width: 900px;
     /* max-height: calc(100dvh - (2 * var(--header-height))); */
     max-height: calc(100dvh - 64px);
     padding: 0;
     border: 1px solid var(--dark-color);
+    box-shadow: 2px 10px 15px 15px rgba(0, 0, 0, 0.2);
+    top: 24px;
+    background-color: black;
+    color: var(--light-color);
   }
   
   .modal dialog .modal-content {
@@ -31,7 +36,7 @@ body.modal-open {
   
   @media (width >= 900px) {
     .modal dialog {
-      width: calc(100vw - 64px);
+      /* width: calc(100vw - 64px); */
     }
     
     .modal dialog .modal-content {
