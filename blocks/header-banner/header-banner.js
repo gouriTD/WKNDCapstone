@@ -37,7 +37,9 @@ export default function decorate(block) {
         if(index%2 === 0){
             // This is the first child.
             childEl.classList.add(`signin-component`);
-            childEl.textContent = child.textContent;
+            const childAnchorEl = child.querySelector('a');
+            childAnchorEl.removeAttribute('class');
+            childEl.innerHTML = child.innerHTML; 
         }else{
             // Add class name for second child.
             childEl.classList.add(`country-selector-component`);

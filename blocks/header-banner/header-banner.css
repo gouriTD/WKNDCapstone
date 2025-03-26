@@ -25,6 +25,10 @@
     gap: 24px;
 }
 
+.signin-banner .signin-component a:any-link{
+    text-decoration: none;
+}
+
 .country-list {
     display: block;
     position: fixed;
