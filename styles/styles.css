@@ -278,14 +278,16 @@ main > .section > .carousel-wrapper {
   padding: 0;
 }
 
-main > .section.underline h2{
+main > .section.underline h2,
+main > .section >.section.article.underline h3 {
   padding-bottom: 12px;
   /* width: 50%; */
   position: relative;
   margin-bottom: 12px;
 }
 
-main > .section.underline h2::before{
+main > .section.underline h2::before,
+main > .section >.section.article.underline h3::before {
   content: '';
   position: absolute;
   bottom: 0;

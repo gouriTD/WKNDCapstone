@@ -193,7 +193,7 @@ header nav .nav-sections ul > li > a {
 
 header nav .nav-sections ul > li > a:hover,
 header nav .nav-sections ul > li > a:active {
-  color: yellow;
+  color: var(--wknd-highlight-color);
 }
 
 header nav[aria-expanded='true'] .nav-sections {
@@ -307,7 +307,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul > li > a:hover,
   header nav .nav-sections ul > li > a:active {
-    background-color: yellow;
+    background-color: var(--wknd-highlight-color);
     color: var(--dark-color);
   }
 
