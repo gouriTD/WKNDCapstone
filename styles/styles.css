@@ -331,6 +331,11 @@ main .section.about-us h1{
     padding: 0 64px;
   }
 
+  main > .section.underline h2,
+  main > .section >.section.article.underline h3 {
+    width: 50%;
+  }
+
   main > .section.underline h2::before{
     width: 10%;
   }
